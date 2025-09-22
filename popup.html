@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Customizer Pro</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo">
+        <div class="logo-icon">🎨</div>
+        <h1>Web Customizer Pro</h1>
+      </div>
+    </header>
+
+    <div class="content">
+      <!-- Dark Mode Section -->
+      <section class="section">
+        <div class="section-header">
+          <div class="section-icon">🌙</div>
+          <h2>Dark Mode</h2>
+          <label class="toggle">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider"></span>
+          </label>
+        </div>
+        <p class="section-description">Transform any website into a dark theme</p>
+        
+        <div class="dark-mode-options">
+          <label class="option-label">
+            <span>Intensity:</span>
+            <input type="range" id="darkModeIntensity" min="1" max="10" value="5" class="range-input">
+            <span class="range-value" id="intensityValue">5</span>
+          </label>
+        </div>
+      </section>
+
+      <!-- Font Customization Section -->
+      <section class="section">
+        <div class="section-header">
+          <div class="section-icon">📝</div>
+          <h2>Font Customization</h2>
+          <label class="toggle">
+            <input type="checkbox" id="fontToggle">
+            <span class="slider"></span>
+          </label>
+        </div>
+        <p class="section-description">Customize fonts and text appearance</p>
+        
+        <div class="font-options">
+          <label class="option-label">
+            <span>Font Family:</span>
+            <select id="fontFamily" class="select-input">
+              <option value="system-ui">System Default</option>
+              <option value="Arial">Arial</option>
+              <option value="Helvetica">Helvetica</option>
+              <option value="Times New Roman">Times New Roman</option>
+              <option value="Georgia">Georgia</option>
+              <option value="Courier New">Courier New</option>
+              <option value="Verdana">Verdana</option>
+              <option value="Comic Sans MS">Comic Sans MS</option>
+              <option value="Impact">Impact</option>
+              <option value="Trebuchet MS">Trebuchet MS</option>
+            </select>
+          </label>
+          
+          <label class="option-label">
+            <span>Font Size:</span>
+            <input type="range" id="fontSize" min="80" max="150" value="100" class="range-input">
+            <span class="range-value" id="fontSizeValue">100%</span>
+          </label>
+          
+          <label class="option-label">
+            <span>Line Height:</span>
+            <input type="range" id="lineHeight" min="100" max="200" value="150" class="range-input">
+            <span class="range-value" id="lineHeightValue">150%</span>
+          </label>
+        </div>
+      </section>
+
+      <!-- Custom CSS Section -->
+      <section class="section">
+        <div class="section-header">
+          <div class="section-icon">⚡</div>
+          <h2>Custom CSS</h2>
+          <label class="toggle">
+            <input type="checkbox" id="cssToggle">
+            <span class="slider"></span>
+          </label>
+        </div>
+        <p class="section-description">Inject your own CSS styles</p>
+        
+        <div class="css-options">
+          <textarea 
+            id="customCSS" 
+            class="css-textarea" 
+            placeholder="/* Enter your custom CSS here */
+body {
+  /* Your styles */
+}"
+            rows="6"
+          ></textarea>
+          
+          <div class="css-actions">
+            <button id="applyCSSBtn" class="btn btn-primary">Apply CSS</button>
+            <button id="clearCSSBtn" class="btn btn-secondary">Clear</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Site-Specific Settings -->
+      <section class="section">
+        <div class="section-header">
+          <div class="section-icon">🌐</div>
+          <h2>Site Settings</h2>
+        </div>
+        <div class="site-info">
+          <p class="current-site">Current site: <span id="currentSite">Loading...</span></p>
+          <div class="site-actions">
+            <button id="resetSiteBtn" class="btn btn-outline">Reset This Site</button>
+            <button id="resetAllBtn" class="btn btn-outline">Reset All Sites</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-info">
+        <p>Made with ❤️ for better web browsing</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
