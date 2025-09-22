@@ -30,12 +30,6 @@ A powerful Chrome extension that allows users to customize any website with dark
 
 ## Installation
 
-### From Chrome Web Store (Recommended)
-1. Visit the Chrome Web Store
-2. Search for "Web Customizer Pro"
-3. Click "Add to Chrome"
-4. Follow the installation prompts
-
 ### Manual Installation (Developer Mode)
 1. Download or clone this repository
 2. Open Chrome and navigate to `chrome://extensions/`
