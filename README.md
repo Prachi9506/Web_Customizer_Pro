@@ -131,14 +131,3 @@ If you encounter any issues or have feature requests:
 4. Test thoroughly across different websites
 5. Submit a pull request with a detailed description
 
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-## Changelog
-
-### Version 1.0.0
-- Initial release with dark mode, font customization, and CSS injection
-- Site-specific settings management
-- Responsive popup interface
-- Chrome Storage integration
