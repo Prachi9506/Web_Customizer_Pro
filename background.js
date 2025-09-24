@@ -33,12 +33,7 @@ class WebCustomizerBackground {
       }
     };
 
-    try {
-      await chrome.storage.sync.set(defaultSettings);
-    } catch (error) {
-      console.log('Could not set default settings');
-    }
-  }
+    
 
   async injectContentScript(tabId) {
     try {
