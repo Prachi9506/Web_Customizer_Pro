@@ -1,4 +1,9 @@
-
+class WebCustomizerPro {
+  constructor() {
+    this.currentTab = null;
+    this.currentSite = null;
+    this.init();
+  }
 
   async init() {
     await this.getCurrentTab();
