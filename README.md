@@ -53,7 +53,7 @@ A powerful Chrome extension that allows users to customize any website with dark
 
 ### Font Customization
 - Choose from popular web fonts in the dropdown
-- Adjust font size using the slider (80%-150%)
+- Adjust font size using the slider
 - Modify line height for better text readability (100%-200%)
 
 ### Custom CSS
